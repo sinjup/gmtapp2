@@ -1,0 +1,13 @@
+{
+ "creation": "2023-09-29 12:26:36.427999",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2023-09-29 12:26:36.427999",
+ "modified_by": "Administrator",
+ "module": "gmt",
+ "name": "Pre-approval",
+ "owner": "Administrator",
+ "source_name": "Pre-approval",
+ "timeseries": 1
+}

@@ -1,0 +1,244 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-21 19:57:34.128159",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "boss_approval",
+  "date",
+  "invoice",
+  "vendor_name",
+  "vendor_number",
+  "buying_entity",
+  "sales_person",
+  "phone_number",
+  "address",
+  "vin",
+  "eta_at_vendor",
+  "days_until_eta",
+  "contact_date",
+  "notes_update",
+  "bos",
+  "deposit_receipt",
+  "spec_sheet",
+  "year",
+  "make",
+  "model",
+  "trim",
+  "colour",
+  "msrp",
+  "vehicle_cost_vendor",
+  "first_pmt_vendor",
+  "first_date_vendor",
+  "buyer_agent",
+  "commission_amount",
+  "date_paid",
+  "row_id",
+  "confirmed"
+ ],
+ "fields": [
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "boss_approval",
+   "fieldtype": "Data",
+   "label": "Boss Approval"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Data",
+   "label": "Invoice"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name"
+  },
+  {
+   "fieldname": "vendor_number",
+   "fieldtype": "Data",
+   "label": "Vendor Number"
+  },
+  {
+   "fieldname": "buying_entity",
+   "fieldtype": "Data",
+   "label": "Buying Entity"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "eta_at_vendor",
+   "fieldtype": "Date",
+   "label": "ETA at Vendor"
+  },
+  {
+   "fieldname": "days_until_eta",
+   "fieldtype": "Int",
+   "label": "Days Until ETA"
+  },
+  {
+   "fieldname": "contact_date",
+   "fieldtype": "Date",
+   "label": "Contact Date"
+  },
+  {
+   "fieldname": "notes_update",
+   "fieldtype": "Text",
+   "label": "Notes/Update"
+  },
+  {
+   "fieldname": "bos",
+   "fieldtype": "Data",
+   "label": "BOS"
+  },
+  {
+   "fieldname": "deposit_receipt",
+   "fieldtype": "Data",
+   "label": "Deposit Receipt"
+  },
+  {
+   "fieldname": "spec_sheet",
+   "fieldtype": "Data",
+   "label": "Spec Sheet"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "trim",
+   "fieldtype": "Data",
+   "label": "Trim"
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Data",
+   "label": "Colour"
+  },
+  {
+   "fieldname": "msrp",
+   "fieldtype": "Int",
+   "label": "MSRP"
+  },
+  {
+   "fieldname": "vehicle_cost_vendor",
+   "fieldtype": "Currency",
+   "label": "Vehicle Cost(Vendor)"
+  },
+  {
+   "fieldname": "first_pmt_vendor",
+   "fieldtype": "Int",
+   "label": "1st PMT(Vendor)"
+  },
+  {
+   "fieldname": "first_date_vendor",
+   "fieldtype": "Date",
+   "label": "1st Date(Vendor)"
+  },
+  {
+   "fieldname": "buyer_agent",
+   "fieldtype": "Data",
+   "label": "Buyer Agent"
+  },
+  {
+   "fieldname": "commission_amount",
+   "fieldtype": "Currency",
+   "label": "Commisison Amount"
+  },
+  {
+   "fieldname": "date_paid",
+   "fieldtype": "Date",
+   "label": "Date Paid"
+  },
+  {
+   "fieldname": "row_id",
+   "fieldtype": "Int",
+   "label": "RowID"
+  },
+  {
+   "default": "0",
+   "fieldname": "confirmed",
+   "fieldtype": "Check",
+   "label": "Confirmed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-22 09:06:41.891168",
+ "modified_by": "Administrator",
+ "module": "gmt",
+ "name": "Intake",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GMTadmin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

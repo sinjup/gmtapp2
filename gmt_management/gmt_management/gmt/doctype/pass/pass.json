@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-25 13:33:09.849244",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle_status",
+  "boss_approval",
+  "date",
+  "invoice",
+  "vendor_name",
+  "vendor_number",
+  "buying_entity",
+  "vin",
+  "eta_at_vendor",
+  "days_until_eta",
+  "notes_updates",
+  "year",
+  "make",
+  "model",
+  "trim",
+  "colour",
+  "msrp",
+  "vehicle_cost",
+  "buyer_agent",
+  "row_id",
+  "status",
+  "confirmed",
+  "contact_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle_status",
+   "fieldtype": "Data",
+   "label": "Vehicle Status"
+  },
+  {
+   "fieldname": "boss_approval",
+   "fieldtype": "Data",
+   "label": "Boss Approval"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Data",
+   "label": "Invoice"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Data",
+   "label": "Vendor Name"
+  },
+  {
+   "fieldname": "vendor_number",
+   "fieldtype": "Phone",
+   "label": "Vendor Number"
+  },
+  {
+   "fieldname": "buying_entity",
+   "fieldtype": "Data",
+   "label": "Buying Entity"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "eta_at_vendor",
+   "fieldtype": "Date",
+   "label": "ETA at Vendor"
+  },
+  {
+   "fieldname": "days_until_eta",
+   "fieldtype": "Int",
+   "label": "Days Until ETA"
+  },
+  {
+   "fieldname": "notes_updates",
+   "fieldtype": "Data",
+   "label": "Notes/Update"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "trim",
+   "fieldtype": "Data",
+   "label": "Trim"
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Data",
+   "label": "Colour"
+  },
+  {
+   "fieldname": "msrp",
+   "fieldtype": "Data",
+   "label": "MSRP"
+  },
+  {
+   "fieldname": "vehicle_cost",
+   "fieldtype": "Currency",
+   "label": "Vehicle Cost"
+  },
+  {
+   "fieldname": "buyer_agent",
+   "fieldtype": "Data",
+   "label": "Buyer Agent"
+  },
+  {
+   "fieldname": "row_id",
+   "fieldtype": "Data",
+   "label": "Row ID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "default": "0",
+   "fieldname": "confirmed",
+   "fieldtype": "Check",
+   "label": "Confirmed"
+  },
+  {
+   "fieldname": "contact_date",
+   "fieldtype": "Date",
+   "label": "Contact Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-25 13:47:42.946637",
+ "modified_by": "Administrator",
+ "module": "gmt",
+ "name": "Pass",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

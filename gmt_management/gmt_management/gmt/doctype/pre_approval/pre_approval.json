@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-21 15:16:39.703702",
+ "default_view": "Report",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "row_id",
+  "status",
+  "vehicle_status",
+  "confirmed",
+  "boss_approval",
+  "date",
+  "invoice",
+  "vendor_name",
+  "vendor_number",
+  "buying_entity",
+  "vin",
+  "eta_at_vendor",
+  "days_until_eta",
+  "notes_updates",
+  "year",
+  "make",
+  "model",
+  "trim",
+  "colour",
+  "msrp",
+  "vehicle_cost_vendor",
+  "buyer_agent"
+ ],
+ "fields": [
+  {
+   "fieldname": "row_id",
+   "fieldtype": "Int",
+   "label": "RowID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Submit\nSold Customer"
+  },
+  {
+   "fieldname": "vehicle_status",
+   "fieldtype": "Data",
+   "label": "Vehicle Status"
+  },
+  {
+   "default": "0",
+   "fieldname": "confirmed",
+   "fieldtype": "Check",
+   "label": "Confirmed",
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.confirmed == 1"
+  },
+  {
+   "fieldname": "boss_approval",
+   "fieldtype": "Select",
+   "label": "Boss Approval",
+   "options": "Submitted\nApproved\nDeclined",
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.boss_approval == 'Declined'"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Data",
+   "label": "Invoice"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Link",
+   "label": "Vendor Name",
+   "options": "Vendor"
+  },
+  {
+   "fieldname": "vendor_number",
+   "fieldtype": "Phone",
+   "label": "Vendor Number"
+  },
+  {
+   "fieldname": "buying_entity",
+   "fieldtype": "Data",
+   "label": "Buying Entity"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN"
+  },
+  {
+   "fieldname": "eta_at_vendor",
+   "fieldtype": "Date",
+   "label": "ETA at Vendor"
+  },
+  {
+   "fieldname": "days_until_eta",
+   "fieldtype": "Int",
+   "label": "Days Until ETA"
+  },
+  {
+   "fieldname": "notes_updates",
+   "fieldtype": "Text",
+   "label": "Notes/Update"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "trim",
+   "fieldtype": "Data",
+   "label": "Trim"
+  },
+  {
+   "fieldname": "colour",
+   "fieldtype": "Data",
+   "label": "Colour"
+  },
+  {
+   "fieldname": "msrp",
+   "fieldtype": "Data",
+   "label": "MSRP"
+  },
+  {
+   "fieldname": "vehicle_cost_vendor",
+   "fieldtype": "Currency",
+   "label": "Vehicle Cost(Vendor)"
+  },
+  {
+   "fieldname": "buyer_agent",
+   "fieldtype": "Data",
+   "label": "Buyer Agent"
+  }
+ ],
+ "hide_toolbar": 1,
+ "links": [],
+ "modified": "2023-10-05 19:05:42.750291",
+ "modified_by": "Administrator",
+ "module": "gmt",
+ "name": "Pre-Approval",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GMTadmin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GMTboss",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "GMTcustomer",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
